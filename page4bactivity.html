@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Anime Quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        #page4bactivity{
+            background-image: url(hakken404page.png);
+            background-size: cover; /* Ensure background image covers the page */
+            font-family: Grandstander;
+        }
+        .quiz-container {
+            width: 50%;
+            height: 300px;
+            margin-top: 200px;
+            margin-left: 50vh;
+            padding: 20px;
+            border: 1px solid #000;
+            background-color: yellow;
+            font-size: 25px;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .choices {
+            list-style-type: decimal;
+            padding-left: 40px;
+        }
+        .choices li {
+            margin-bottom: 10px;
+        }
+        .lives {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body id="page4bactivity">
+    <div class="quiz-container">
+        <div id="question-container"></div>
+        <ul id="choices-container" class="choices"></ul>
+        <div id="lives-container" class="lives"></div>
+    </div>
+    <script src="visualnovel.js"></script>
+</body>
+</html>

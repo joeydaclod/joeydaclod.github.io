@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Anime Quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+       #page4bactivity {
+    background-image: url(hakken404page.png);
+    background-size: cover;
+    font-family: 'Grandstander', cursive;
+}
+
+.quiz-container {
+    width: 50%;
+    height: 400px;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #fdda5c; /* Kahoot-like yellow background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-size: 25px;
+}
+
+.question {
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 30px;
+    color: #333;
+}
+
+.choices {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 50px;
+}
+
+.choices li {
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.choices li:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05); /* Slightly increase size on hover for effect */
+}
+
+.choices li:active {
+    background-color: #ddd;
+    transform: scale(0.98); /* Slightly shrink on click */
+}
+
+.lives {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+}
+    </style>
+</head>
+<body id="page4bactivity">
+    <div class="quiz-container">
+        <div id="question-container"></div>
+        <ul id="choices-container" class="choices"></ul>
+        <div id="lives-container" class="lives"></div>
+    </div>
+    <script src="visualnovel.js"></script>
+</body>
+</html>
